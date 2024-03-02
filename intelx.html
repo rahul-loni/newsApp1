@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <p id="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum blanditiis sapiente autem, consectetur eum rem, ipsam deserunt error pariatur deleniti aperiam veritatis explicabo quisquam labore ullam rerum fuga, exercitationem dolorem!</p>
+    </div>
+    
+
+
+    <button id="btn1"  onclick="showhide()">Click</button>
+    <button id="btn2"  onclick="show()">Click</button>
+    
+    <script>
+
+        function showhide(){
+            let btn =document.getElementById("btn1");
+            let para=document.getElementById("para");
+            if(para.style.display !=="none"){
+                para.style.display="none"
+            }else{
+                para.style.display="block"
+            }
+        }
+        function show(){
+       let btn2=document.getElementById("btn2");
+       btn2.alert();
+    }
+    </script>
+</body>
+</html>
